@@ -9,15 +9,25 @@ variable "helm_chart" {
 }
 
 variable "helm_repository" {
-  default = "https://charts.bitnami.com/bitnami"
+  type        = string
+  default     = "https://charts.bitnami.com/bitnami"
+  description = "The repository where the Helm chart is stored"
 }
 
 variable "helm_repository_password" {
-  default = ""
+  type        = string
+  nullable    = false
+  default     = ""
+  description = "The password of the repository where the Helm chart is stored"
+  sensitive   = true
 }
 
 variable "helm_repository_username" {
-  default = ""
+  type        = string
+  nullable    = false
+  default     = ""
+  description = "The username of the repository where the Helm chart is stored"
+  sensitive   = true
 }
 
 variable "chart_version" {

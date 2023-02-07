@@ -61,6 +61,7 @@ task k3d:test
 
 ## History
 
-| Date     | Release    | Change                 |
-| -------- | ---------- | ---------------------- |
-| 20211116 | 20211116.1 | Initial v0.0.1 release |
+| Date     | Release    | Change                      |
+| -------- | ---------- | --------------------------- |
+| 20211116 | v0.0.1     | Initial v0.0.1 release      |
+| 20230206 | v0.0.2     | Specify sensitive variables |
